@@ -1,0 +1,26 @@
+{
+  "name": "Trello Board Color Changer",
+  "description": "Let's you change your Trello boards background color.",
+  "version": "0.5",
+  "permissions": [
+    "tabs", "storage", "*://trello.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+      "default_title": "Set your Trello boards background color",
+      "default_icon": "icons/icon16.png",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://trello.com/b/*"],
+      "js": ["jquery/jquery.min.js","content-script.js"]
+    }
+  ],
+  "manifest_version": 2
+}

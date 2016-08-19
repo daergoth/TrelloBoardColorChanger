@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Trello color set popup</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        background: white;
+      }
+
+      .status-label {
+        display: block;
+        margin: 10px, 0, 0, 10px;
+        font-size: 1.2em;
+      }
+
+    </style>
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <script src="colorpicker/jquery.colorpicker.js"></script>
+    <script src="switch-button/jquery.switchButton.js"></script>
+    <script src="popup.js"></script>
+
+    <link href="jquery/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="jquery/jquery-ui.structure.min.css" rel="stylesheet" type="text/css"/>
+    <link href="jquery/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"/>
+    <link href="colorpicker/jquery.colorpicker.css" rel="stylesheet" type="text/css"/>
+    <link href="switch-button/jquery.switchButton.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="status-label" for="on-off">Status:</div><br>
+    <input id="on-off" type="checkbox" value="1" checked>
+    <span class="clr-pck"></span>
+  </body>
+</html>
